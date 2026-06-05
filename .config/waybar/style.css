@@ -1,0 +1,83 @@
+@define-color foreground #c5c9c5;
+@define-color foreground-inactive #4a4a4a;
+@define-color background rgba(13, 13, 13, 0.90);
+@define-color accent #e2d9b3;
+@define-color green #8a9a7b;
+@define-color red #c4746e;
+
+* {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar {
+    color: @foreground;
+    background-color: @background;
+    border-bottom: 1px solid rgba(226, 217, 179, 0.15);
+}
+
+#workspaces button {
+    color: @foreground-inactive;
+    padding: 0 0.4em;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    color: @accent;
+}
+
+#workspaces button.empty {
+    color: @foreground-inactive;
+    opacity: 0.4;
+}
+
+#workspaces button:hover {
+    color: @foreground;
+    background: rgba(226, 217, 179, 0.08);
+}
+
+#clock {
+    color: @accent;
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+#temperature {
+    color: @green;
+    padding-left: 1em;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#wireplumber,
+#battery,
+#idle_inhibitor,
+#language,
+#network,
+#bluetooth,
+#tray {
+    padding-right: 1em;
+    color: @foreground;
+}
+
+#battery.warning {
+    color: @accent;
+}
+
+#battery.critical {
+    color: @red;
+}
+
+#memory,
+#custom-platform-profile {
+    padding-left: 1em;
+    color: @foreground;
+}
+
+#custom-platform-profile {
+    color: @green;
+}
