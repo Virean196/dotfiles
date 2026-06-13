@@ -5,6 +5,8 @@ The dependencies are as follows:
 - Dunst (Notification daemon)
 - SDDM (Display Manager)
 - Hyprland (Tile Manager)
+- Hyprpaper (Background image)
+- Hyprlock (Lock screen)
 - Rofi (Run Menu)
 - Starship (Shell promp)
 - Tmux (Terminal emulator (WIP))
