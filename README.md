@@ -14,6 +14,7 @@ The dependencies are as follows:
 - Waybar (Taskbar)
 
 --- Side Note ---
+
 Neovim config is using mostly the Lazy Vim base and with some edits, mainly to keybinds from the US layout to a more friendly PT layout.
 Tmux is still undergoing some change, some basic keybinds were altered for ease of use on PT keyboard layout.
 
