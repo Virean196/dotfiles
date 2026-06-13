@@ -13,6 +13,10 @@ The dependencies are as follows:
 - Neovim (Code editor (WIP))
 - Waybar (Taskbar)
 
+--- Side Note ---
+Neovim config is using mostly the Lazy Vim base and with some edits, mainly to keybinds from the US layout to a more friendly PT layout.
+Tmux is still undergoing some change, some basic keybinds were altered for ease of use on PT keyboard layout.
+
 --- Image Examples (WIP) ---
 
 ![nvim & tmux](https://github.com/Virean196/dotfiles/blob/main/Pictures/dotfiles-ss/nvim%20%2B%20tmux.png)
