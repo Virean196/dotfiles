@@ -12,6 +12,7 @@ The dependencies are as follows:
 - Waybar (Taskbar)
 
 --- Image Examples (WIP) ---
+
 ![nvim & tmux](https://github.com/Virean196/dotfiles/blob/main/Pictures/dotfiles-ss/nvim%20%2B%20tmux.png)
 ![terminal, waybar & dunst](https://github.com/Virean196/dotfiles/blob/main/Pictures/dotfiles-ss/terminal%20%2B%20waybar%20%2B%20dunst.png)
 ![rofi](https://github.com/Virean196/dotfiles/blob/main/Pictures/dotfiles-ss/rofi.png)
