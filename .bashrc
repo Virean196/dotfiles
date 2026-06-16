@@ -18,3 +18,4 @@ alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias dev='tmux attach -t bootdev 2>/dev/null || tmux new -s bootdev'
 
 . "$HOME/.local/share/../bin/env"
+export PATH=$PATH:$HOME/.local/bin

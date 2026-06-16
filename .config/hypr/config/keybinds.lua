@@ -16,6 +16,13 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("code"))
+hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.exec_cmd("rofi -dmenu -p 'YouTube URL' | xargs ytfloat"))
+
+-- Toggle floating and pin for picture-in-picture style windows
+hl.bind(mainMod .. " + SHIFT + P", function()
+	hl.dispatch(hl.dsp.window.float({ action = "toggle" }))
+	hl.dispatch(hl.dsp.window.pin({ action = "toggle" }))
+end)
 
 -- Lock Screen --
 hl.bind(mainMod .. " + L ", hl.dsp.exec_cmd("hyprlock"))

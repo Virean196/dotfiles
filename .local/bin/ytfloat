@@ -1,0 +1,3 @@
+#!/bin/bash
+# Usage: ytfloat <youtube-url>
+mpv --ytdl-format="best[height<=720]" "$1"
