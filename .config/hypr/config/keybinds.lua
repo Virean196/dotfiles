@@ -17,6 +17,7 @@ hl.bind(mainMod .. " + PRINT", hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m region"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("code"))
 hl.bind(mainMod .. " + SHIFT + Y", hl.dsp.exec_cmd("rofi -dmenu -p 'YouTube URL' | xargs ytfloat"))
+hl.bind(mainMod .. " + SHIFT + V", hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy"))
 
 -- Toggle floating and pin for picture-in-picture style windows
 hl.bind(mainMod .. " + SHIFT + P", function()

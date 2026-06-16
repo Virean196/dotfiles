@@ -36,7 +36,8 @@ hl.window_rule({
 	match = { class = "mpv" },
 	float = true,
 	pin = true,
-	size = "384 324",
+	size = "690 390",
+	move = "20 20",
 })
 
 -- Layer rules also return a handle.
