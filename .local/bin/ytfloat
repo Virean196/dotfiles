@@ -1,3 +1,11 @@
 #!/bin/bash
 # Usage: ytfloat <youtube-url>
-mpv --ytdl-format="best[height<=720]" "$1"
+url="$1"
+
+# Extract list ID if present, rebuild as a proper playlist URL
+if [[ "$url" == *"list="* ]]; then
+  list_id=$(echo "$url" | grep -oP 'list=\K[^&]+')
+  url="https://www.youtube.com/playlist?list=$list_id"
+fi
+
+mpv --hwdec=auto --ytdl-format="best[height<=720]" "$url"
