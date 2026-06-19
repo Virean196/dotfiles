@@ -37,7 +37,7 @@ hl.window_rule({
 	float = true,
 	pin = true,
 	size = "690 390",
-	move = "0 0",
+	move = "2 688",
 })
 
 -- Layer rules also return a handle.
