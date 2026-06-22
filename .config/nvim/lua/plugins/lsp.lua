@@ -1,10 +1,26 @@
 return {
   {
-    "j-hui/fidget.nvim",
+    "nvim-treesitter/nvim-treesitter",
     opts = {
-      progress = {
-        suppress_on_insert = true,
-        ignore = { "pyright", "pyright-langserver" },
+      ensure_installed = { "html", "css", "javascript", "typescript" },
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        html = {},
+        cssls = {},
+        tsserver = {},
+      },
+    },
+  },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "prettier",
+        "eslint_d",
       },
     },
   },
