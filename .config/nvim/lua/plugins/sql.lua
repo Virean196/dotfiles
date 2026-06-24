@@ -9,10 +9,9 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        sqlls = {
-          settings = {
-            sqlLanguageServer = {
-              -- tells sqlls to default to mysql dialect
+        sqls = {
+          connections = {
+            {
               driver = "mysql",
             },
           },
