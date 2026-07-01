@@ -1,0 +1,39 @@
+format = """
+$directory$git_branch$git_status$golang$python$docker_context
+$character"""
+
+[character]
+success_symbol = "[❯](bold #e2d9b3)"
+error_symbol = "[❯](bold #c4746e)"
+
+[directory]
+style = "bold #c5c9c5"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style = "bold #e2d9b3"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "bold #c4746e"
+format = '([$all_status$ahead_behind]($style) )'
+
+[golang]
+symbol = "🐹 "
+style = "bold #8a9a7b"
+format = "via [$symbol$version]($style) "
+
+[python]
+symbol = "🐍 "
+style = "bold #8a9a7b"
+format = "via [$symbol$version]($style) "
+
+[docker_context]
+symbol = "🐳 "
+style = "bold #8ba4b0"
+format = "via [$symbol$context]($style) "
+
+[gcloud]
+disabled = true
