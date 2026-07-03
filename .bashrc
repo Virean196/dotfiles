@@ -20,3 +20,9 @@ alias dev='tmux attach -t bootdev 2>/dev/null || tmux new -s bootdev'
 . "$HOME/.local/share/../bin/env"
 export PATH=$PATH:$HOME/.local/bin
 export WINEPREFIX=/games/wine
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/virean/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/home/virean/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/virean/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/home/virean/Downloads/google-cloud-sdk/completion.bash.inc'; fi
