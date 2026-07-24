@@ -38,10 +38,10 @@ hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
 
 -- Adjust window size with mainMod + SHIFT + arrow keys
-hl.bind(mainMod .. "+SHIFT+left", hl.dsp.window.resize({ x = -20, y = 0 }))
-hl.bind(mainMod .. "+SHIFT+right", hl.dsp.window.resize({ x = 20, y = 0 }))
-hl.bind(mainMod .. "+SHIFT+up", hl.dsp.window.resize({ x = 0, y = -20 }))
-hl.bind(mainMod .. "+SHIFT+down", hl.dsp.window.resize({ x = 0, y = 20 }))
+hl.bind(mainMod .. "+SHIFT+left", hl.dsp.window.resize({ x = -20, y = 0, relative = true }))
+hl.bind(mainMod .. "+SHIFT+right", hl.dsp.window.resize({ x = 20, y = 0, relative = true }))
+hl.bind(mainMod .. "+SHIFT+up", hl.dsp.window.resize({ x = 0, y = -20, relative = true }))
+hl.bind(mainMod .. "+SHIFT+down", hl.dsp.window.resize({ x = 0, y = 20, relative = true }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
