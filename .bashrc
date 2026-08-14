@@ -29,3 +29,7 @@ if [ -f '/home/virean/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . 
 
 # Turso
 export PATH="$PATH:/home/virean/.turso"
+
+# Camera on/off
+alias cam-off='sudo modprobe -r uvcvideo'
+alias cam-on='sudo modprobe uvcvideo'
