@@ -6,51 +6,51 @@
 @define-color red #c4746e;
 
 * {
-    font-family: JetBrainsMono Nerd Font;
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 
 #waybar {
-    color: @foreground;
-    background-color: @background;
-    border-bottom: 1px solid rgba(226, 217, 179, 0.15);
+  color: @foreground;
+  background-color: @background;
+  border-bottom: 1px solid rgba(226, 217, 179, 0.15);
 }
 
 #workspaces button {
-    color: @foreground-inactive;
-    padding: 0 0.4em;
-    transition: all 0.2s ease;
+  color: @foreground-inactive;
+  padding: 0 0.4em;
+  transition: all 0.2s ease;
 }
 
 #workspaces button.active {
-    color: @accent;
+  color: @accent;
 }
 
 #workspaces button.empty {
-    color: @foreground-inactive;
-    opacity: 0.4;
+  color: @foreground-inactive;
+  opacity: 0.4;
 }
 
 #workspaces button:hover {
-    color: @foreground;
-    background: rgba(226, 217, 179, 0.08);
+  color: @foreground;
+  background: rgba(226, 217, 179, 0.08);
 }
 
 #clock {
-    color: @accent;
-    font-weight: bold;
-    padding: 0 1em;
+  color: @accent;
+  font-weight: bold;
+  padding: 0 1em;
 }
 
 #temperature {
-    color: @green;
-    padding-left: 1em;
+  color: @green;
+  padding-left: 1em;
 }
 
 #temperature.critical {
-    color: @red;
+  color: @red;
 }
 
 #wireplumber,
@@ -60,24 +60,38 @@
 #network,
 #bluetooth,
 #tray {
-    padding-right: 1em;
-    color: @foreground;
+  padding-right: 1em;
+  color: @foreground;
 }
 
 #battery.warning {
-    color: @accent;
+  color: @accent;
 }
 
 #battery.critical {
-    color: @red;
+  color: @red;
 }
 
 #memory,
 #custom-platform-profile {
-    padding-left: 1em;
-    color: @foreground;
+  padding-left: 1em;
+  color: @foreground;
 }
 
 #custom-platform-profile {
-    color: @green;
+  color: @green;
+}
+
+tooltip {
+  background-color: #0d0d0d;
+  border: 1px solid #e2d9b3;
+  border-radius: 8px;
+  color: #e2d9b3;
+}
+
+tooltip label {
+  color: #e2d9b3;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 16px;
+  padding: 8px;
 }

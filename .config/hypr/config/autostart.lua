@@ -6,6 +6,7 @@
 hl.on("hyprland.start", function()
 	hl.dispatch(hl.dsp.exec_cmd("systemctl --user start hyprpolkitagent"))
 	hl.exec_cmd("hyprpaper & hyprsunset")
-	hl.exec_cmd("waybar")
+	hl.exec_cmd("bash -c 'while ! wpctl status &>/dev/null; do sleep 0.2; done; waybar'")
+	-- hl.exec_cmd("waybar -l debug &> /tmp/waybar.log")
 	hl.dispatch(hl.dsp.exec_cmd("wl-paste --watch cliphist store"))
 end)

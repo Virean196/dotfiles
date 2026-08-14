@@ -27,8 +27,14 @@
     },
 
     "clock": {
-        "format": "{:%d.%m.%Y | %H:%M}"
-    },
+      "format": "{:%d.%m.%Y | %H:%M}",
+      "tooltip-format": "<big>{:%B %Y}</big>\n<tt>{calendar}</tt>",
+      "calendar": {
+        "format": {
+            "today": "<span color='#e2d9b3'><b>{}</b></span>"
+        }
+      }
+    },      
 
     "wireplumber": {
         "format": "\udb81\udd7e  {volume}%",
