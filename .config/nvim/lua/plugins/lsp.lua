@@ -11,7 +11,7 @@ return {
       servers = {
         html = {},
         cssls = {},
-        tsserver = {},
+        bashls = {},
       },
     },
   },
