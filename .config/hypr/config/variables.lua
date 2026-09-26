@@ -7,3 +7,4 @@
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("HYPRSHOT_DIR", "/home/virean/Pictures/Screenshots")
+hl.env("QT_QPA_PLATFORMTHEME", "kde")
