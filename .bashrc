@@ -14,17 +14,9 @@ PS1='[\u@\h \W]\$ '
 export PATH=$PATH:$HOME/.local/opt/go/bin
 export PATH=$PATH:$HOME/go/bin
 eval "$(starship init bash)"
+
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias dev='tmux attach -t bootdev 2>/dev/null || tmux new -s bootdev'
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/virean/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/home/virean/Downloads/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/virean/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/home/virean/Downloads/google-cloud-sdk/completion.bash.inc'; fi
-
-# Turso
-export PATH="$PATH:/home/virean/.turso"
 
 # Camera on/off
 alias cam-off='sudo modprobe -r uvcvideo'
