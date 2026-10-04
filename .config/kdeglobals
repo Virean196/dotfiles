@@ -1,12 +1,3 @@
-# SPDX-FileCopyrightText: Andrew Lake <jamboarder@gmail.com>
-# SPDX-FileCopyrightText: Marco Martin <notmart@gmail.com>
-# SPDX-FileCopyrightText: Nate Graham <nate@kde.org>
-# SPDX-FileCopyrightText: Noah Davis <noahadvs@gmail.com>
-# SPDX-FileCopyrightText: Neal Gompa <ngompa@kde.org>
-# SPDX-FileCopyrightText: David Redondo <kde@david-redondo.de>
-# SPDX-FileCopyrightText: Thomas Duckworth <tduck973564@gmail.com>
-# SPDX-License-Identifier: LGPL-2.0-or-later
-
 [ColorEffects:Disabled]
 Color=56,56,56
 ColorAmount=0
@@ -141,18 +132,18 @@ ForegroundVisited=155,89,182
 
 [General]
 ColorScheme=BreezeDark
+Name[en_GB]=Breeze Dark
 Name=Breeze Dark
 Name[ar]=نسيم داكن
 Name[az]=Breeze - Tünd
 Name[bg]=Breeze Тъмен
 Name[bs]=Breeze tamna
-Name[ca]=Brisa fosca
 Name[ca@valencia]=Brisa fosca
+Name[ca]=Brisa fosca
 Name[cs]=Breeze Tmavé
 Name[da]=Breeze Dark
 Name[de]=Breeze Dunkel
 Name[el]=Breeze σκούρο
-Name[en_GB]=Breeze Dark
 Name[eo]=Breeze Dark
 Name[es]=Brisa oscuro
 Name[et]=Breeze tume
@@ -184,10 +175,10 @@ Name[ru]=Breeze, тёмный вариант
 Name[sa]=वायुः अन्धकारः
 Name[sk]=Tmavý vánok
 Name[sl]=Sapica, temna
-Name[sr]=Поветарац тамни
 Name[sr@ijekavian]=Поветарац тамни
 Name[sr@ijekavianlatin]=Povetarac tamni
 Name[sr@latin]=Povetarac tamni
+Name[sr]=Поветарац тамни
 Name[sv]=Breeze mörk
 Name[ta]=கரும் பிரீஸ்
 Name[tg]=Насими торик
@@ -199,6 +190,23 @@ shadeSortColumn=true
 
 [KDE]
 contrast=4
+
+[KFileDialog Settings]
+Allow Expansion=false
+Automatically select filename extension=true
+Breadcrumb Navigation=true
+Decoration position=2
+Show Full Path=false
+Show Inline Previews=true
+Show Preview=false
+Show Speedbar=true
+Show hidden files=false
+Sort by=Name
+Sort directories first=true
+Sort hidden files last=false
+Sort reversed=false
+Speedbar Width=153
+View Style=DetailTree
 
 [WM]
 activeBackground=39,44,49

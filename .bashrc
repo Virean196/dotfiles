@@ -29,3 +29,6 @@ export PATH="$PATH:/home/virean/.turso"
 # Camera on/off
 alias cam-off='sudo modprobe -r uvcvideo'
 alias cam-on='sudo modprobe uvcvideo'
+
+# Set nvim as default sudo editor
+export SUDO_EDITOR=nvim
